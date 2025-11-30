@@ -9,11 +9,10 @@ import {PublicRoute} from "./components/PublicRoute/PublicRoute";
 
 export const router = createBrowserRouter([
   {
-    index: true,
     path: "auth",
     element:
       <ProtectedRoute>
-        <MainAuth />,
+        <MainAuth />
       </ProtectedRoute>
   },
   {

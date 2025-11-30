@@ -3,7 +3,7 @@ import {StandsCard} from "../StandsCard/StandsCard";
 import {Link, useParams} from "react-router-dom";
 import {useUniversityInfo} from "../../utils/useUniversityInfo";
 import {useStandsInfo} from "../../utils/useStandsInfo";
-import {useLocation} from "react-router";
+import {useLocation} from "react-router-dom";
 
 export const Stands = (props) => {
   const {
