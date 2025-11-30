@@ -11,7 +11,6 @@ export const UniversityInfo = () => {
   const standsCount = stands.length
 
   const universityRender = universities.find((uni) => uni.id.toString() === id)
-  console.log(universityRender, universities, id)
 
   return (
     <div className={classes.wrapper}>
