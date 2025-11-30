@@ -1,0 +1,21 @@
+.wrapper {
+  max-width: 1360px;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 620px) {
+  .image {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .image {
+    display: none;
+  }
+}

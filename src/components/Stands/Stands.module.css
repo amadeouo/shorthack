@@ -1,6 +1,8 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  max-width: 1360px;
+  width: 100%;
 }
 
 .h2 {
@@ -13,8 +15,42 @@
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
+  max-width: 1360px;
+  width: 100%;
 }
 
 .link {
   color: black;
+}
+
+@media (max-width: 1360px) {
+  .standsWrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 880px) {
+  .standsWrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .standsWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .standsWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 460px) {
+  .standsWrapper {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    grid-column-gap: 0;
+  }
 }

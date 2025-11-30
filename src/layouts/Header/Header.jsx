@@ -9,7 +9,7 @@ export const Header = () => {
     <header
       className={classes.wrapper}
     >
-      <Link to="/">
+      <Link to="//" className={classes.logo}>
         <img
           src={logoUrl}
           alt="Логотип X5"
@@ -17,11 +17,11 @@ export const Header = () => {
       </Link>
 
       <nav className={classes.wrapperNav}>
-        <Link className={classes.link} to="/">Главная</Link>
+        <Link className={classes.link} to="//">Главная</Link>
         <Link className={classes.link} to="/events">Все мероприятия</Link>
       </nav>
 
-      <Link to="/profile">
+      <Link to="/profile" className={classes.profile}>
         <img
           src={profileUrl}
           alt="Иконка профиля"
