@@ -1,16 +1,43 @@
-# React + Vite
+# Административная панель аналитики стендов
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## О проекте
 
-Currently, two official plugins are available:
+Этот проект — административная панель для создания, мониторинга и анализа данных по стендам университетов. Панель обеспечивает удобное взаимодействие для пользователей (администраторов): позволяет создавать, просматривать и анализировать информацию по каждому стенду, а также видеть связь стендов с университетами.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Контекст разработки
 
-## React Compiler
+Работа выполнена в рамках хакатона **Shorthack** MISIS, проходившего в НИТУ «МИСиС». Время разработки прототипа — 6 часов (формат express). Главная цель — быстрое создание рабочего демонстрационного решения для оценки концепции и презентации перед экспертами.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Технологический стек
 
-## Expanding the ESLint configuration
+- **Frontend**: React 19, Vite, React Router Dom 7
+- **Стилизация**: CSS Modules
+- **Управление состоянием**: useState, пользовательские хуки (useStandsInfo, useUniversityInfo)
+- **Инструменты**: ESLint, classnames
+- **Бэкенд**: отсутствует, все данные хранятся и моделируются в браузере (mock data)
+- **Сборка**: vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Архитектура и структура
+
+- `src/components/` — переиспользуемые компонентные блоки (кнопки, формы, карточки стендов)
+- `src/layouts/` — лэйауты для основных страниц (авторизация, ивенты, обертки)
+- `src/pages/` — страницы и роутинг
+- `src/utils/` — кастомные хуки для мок-данных о стендах и университетах
+- Все стили в .module.css для изоляции
+
+## Кратко о логике
+- Авторизация по токену (просто для демонстрации логики auth, пароль 123)
+- Стенд и университеты связаны через массивы ID
+- Можно просматривать все стенды или разбивку по университетам
+- Главные данные моделируются в JS через хуки, без API
+
+## Итоговая презентация
+В рамках демонстрации были реализованы:
+- Создание и просмотр записей по стендам
+- Аналитика (фильтрация, отображение связей с университетами)
+- Минималистичный UI и простая авторизация
+- Поддержка дальнейшего масштабирования (структура + хуки)
+
+Проект получил положительные отзывы на защите как эффективная основа для будущего расширения и реального внедрения инструментов аналитики в образовательной среде. Итоговый результат - 3 место из 11
+
+---
