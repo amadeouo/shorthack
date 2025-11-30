@@ -1,0 +1,48 @@
+.wrapper {
+  display: flex;
+  height: 142px;
+  flex-direction: column;
+  padding: 12px 16px;
+  border: 2px solid #5FAF2D;
+  border-radius: 10px;
+}
+
+.h3 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 4px;
+  margin-top: 38px;
+  text-align: left;
+}
+
+.info {
+  font-size: 16px;
+  text-align: left;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 12px;
+  gap: 4px;
+}
+
+.button {
+  font-family: "X5 Sans", sans-serif;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #5FAF2D;
+  border: 1px solid #5FAF2D;
+  color: white;
+  width: 145px;
+  cursor: pointer;
+}
+
+.buttonNone {
+  font-family: "X5 Sans", sans-serif;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid black;
+  width: 145px;
+  cursor: pointer;
+}

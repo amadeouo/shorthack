@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'X5 Sans';
+  font-weight: normal;
+  src: url("assets/fonts/X5Sans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'X5 Sans';
+  font-weight: bold;
+  src: url("assets/fonts/X5Sans-Bold.woff2") format("woff2");
+}
+
+:root {
+  font-family: X5 Sans, sans-serif;
+  line-height: 1.5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+body {
+  color: black;
+  font-size: 20px;
+}
