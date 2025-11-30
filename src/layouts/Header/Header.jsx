@@ -1,5 +1,7 @@
 import classes from "./header.module.css"
 import { Link } from "react-router-dom";
+import logoUrl from "../../assets/logo.png"
+import profileUrl from "../../assets/profile.png"
 
 export const Header = () => {
 
@@ -9,7 +11,7 @@ export const Header = () => {
     >
       <Link to="/">
         <img
-          src="/logo.svg"
+          src={logoUrl}
           alt="Логотип X5"
         />
       </Link>
@@ -21,7 +23,7 @@ export const Header = () => {
 
       <Link to="/profile">
         <img
-          src="/profile.png"
+          src={profileUrl}
           alt="Иконка профиля"
         />
       </Link>
